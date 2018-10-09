@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lan="en">
+
+<!-- Sign-up -->
+
+<head>
+  <title>Sign-up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="login_sign-up.css">
+</head>
+
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> Sign-up </button>
+
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    </div>
+    <br>
+    <div class="container">
+      <h1>Sign-up</h1>
+      <hr>
+      <br>
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="uname" required>
+      <br><br>
+      <label for="rno"><b>Roll No.</b></label>
+      <input type="text" placeholder="Enter Roll No." name="rno" required>
+      <br><br>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <br><br>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <br><br>
+      <label for="rpsw"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="rpsw" required>
+      <br><br>
+      <label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
+      <br><br>
+      <p>By creating an account, you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      <button type="submit">Create your account</button>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) 
+{
+    if (event.target == modal) 
+    {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+

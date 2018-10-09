@@ -84,6 +84,11 @@ button:hover
     padding: 16px;
 }
 
+hr 
+{
+    border: 1px solid #f1f1f1;
+}
+
 /* Full-width input fields */
 input[type=text], input[type=password] 
 {
